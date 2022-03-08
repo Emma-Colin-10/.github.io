@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE-Edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue sur mon CV</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <h1>
-        <CENTER> <font size="60">Emma Colin</font>
-       <br> Etudiante en Bachelor Cheffe de Projet Digital à WIS Toulouse
-       <br> Assistante Marketing chez Louise émoi</CENTER>
+        Emma Colin
+       <br> Etudiante en Bachelor Cheffe de Projet Digital
+       <br> Assistante Marketing chez Louise émoi
     </h1>
     <h2>À Propos</h2>
     <p>J'ai débuté mes études en Histoire de l'Art afin d'appronfondir mes connaissances 
