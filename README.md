@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE-Edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue sur mon CV</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <h1>
         <CENTER> <font size="60">Emma Colin</font>
-       <br> Etudiante en Bachelor Chef.fe de Projet Digitale à WIS Toulouse
+       <br> Etudiante en Bachelor Cheffe de Projet Digital à WIS Toulouse
        <br> Assistante Marketing chez Louise émoi</CENTER>
     </h1>
     <h2>À Propos</h2>
@@ -36,14 +37,15 @@
         </ul>
     </ul>
 </p>
+<h2>Compétences</h2>
     <h2>Formations</h2>
 <p>
-<ul>
-<li>Bachelor Chef.fe de Projet Digital <em>WIS TOULOUSE</em> 2021-2022</li>
+    <ul>
+        <li>Bachelor Chef.fe de Projet Digital <em>WIS TOULOUSE</em> 2021-2022</li>
 <li>Bachelor Expert Marketing <em>Ecole Peyrefitte LYON</em> 2020-2021</li>
-<li>BTS Métiers de l'Esthétique Cosmétiques Parfumeries <em>Ecole Peyrefitte LYON</em>2018-2020
-    <li>Histoire de L'Art <em>Université Lumières LYON 2</em>2017-2018</li>
-        <li>Baccalauréat Littéraire <em>Lycée Mathias</em>2015-2017</li>
+        <li>BTS Métiers de l'Esthétique Cosmétiques Parfumeries <em>Ecole Peyrefitte LYON</em> 2018-2020
+            <li>Histoire de L'Art <em>Université Lumières LYON </em>2017-2018</li>
+        <li>Baccalauréat Littéraire <em>Lycée Mathias</em></li>
     </ul>
 </p>
 </body>
