@@ -1,49 +1,216 @@
+
 <!DOCTYPE html>
-<html>/</lang:"fr">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-Edge, chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="text/html; UTF-8"/>
+    <meta name="keywords" content="HTML, CSS, JavaScript"/>
+    <meta name="author" content="Emma COLIN"/>
+    <meta name="description" content="CV en ligne d'Emma COLIN"/>
+    <meta name="generator" content="Visual Studio Code"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Bienvenue sur mon CV</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/b53df7b79f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h1>
-        <CENTER> <font size="60">Emma Colin</font>
-       <br> Etudiante en Bachelor Chef.fe de Projet Digitale à WIS Toulouse
-       <br> Assistante Marketing chez Louise émoi</CENTER>
-    </h1>
-    <h2>À Propos</h2>
-    <p>J'ai débuté mes études en Histoire de l'Art afin d'appronfondir mes connaissances 
-        dans ce milieu. Par la suite, j'ai réalisé que cet enseignement ne me convenait pas, 
-        je suis donc partie étudier les cosmétiques. Mon fort intérêt pour ce qui relève du bien-être
-        et de la nature m'a conduit à travailler pour une savonnerie artisanale. Ici, j'ai découvert les Métiers
-        de la communication Digitale, que je souhaite aujourd'hui appronfondir. </p>
-<h2>Expériences Professionnelles</h2>
-<p>
-    <ul>
-        <li>Stage: Animatrice/Attachée Commerciale <em>DR HAUSCHKA</em></li>
+    <nav id="navbar">
         <ul>
-            <li>Gestion d'un porte feuille client</li>
-            <li>Animations dans différents points de vente</li>
+            <li><a id="homelog" href="#home"><i class="fas fa-home"></i></li>
+            <li><a href="#apropos">	&Agrave; propos</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#experiences">Expériences</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </ul>
-    <ul>
-        <li>Assitante Marketing <em>Louise émoi</em></li>
-        <ul>
-            <li>Service client</li>
-            <li>Rédaction WEB</li>
-            <li>Community management</li>
-        </ul>
-    </ul>
-</p>
-    <h2>Formations</h2>
-<p>
-<ul>
-<li>Bachelor Chef.fe de Projet Digital <em>WIS TOULOUSE</em> 2021-2022</li>
-<li>Bachelor Expert Marketing <em>Ecole Peyrefitte LYON</em> 2020-2021</li>
-<li>BTS Métiers de l'Esthétique Cosmétiques Parfumeries <em>Ecole Peyrefitte LYON</em>2018-2020
-    <li>Histoire de L'Art <em>Université Lumières LYON 2</em>2017-2018</li>
-        <li>Baccalauréat Littéraire <em>Lycée Mathias</em>2015-2017</li>
-    </ul>
-</p>
+    </nav>
+    <nav class="barreNavigation">
+        <a href="javascript:void(0);" class="icon-burger" onclick="burgerNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div id="links">
+            <div class="column">
+                <a href="#home"><i class="fas fa-home"></i></a>
+                <a href="#apropos">	&Agrave; propos</a>
+                <a href="#parcours">Parcours</a>
+                <a href="#experiences">Expériences</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="parallax">
+        <div id="presentation" class="typing-text" style="object-fit: fill;">
+            <h2 id="name">Emma COLIN</h2>
+            <p> Etudiante en Bachelor Cheffe de Projet Digital à WIS Toulouse
+                Assistante Marketing chez Louise émoi</p>
+            <p id="text"></p>
+        </div>
+    </section>
+    <section id="apropos">
+        <div class="section">
+            <div class="title">
+                <span></span>
+                <h2 class="background">	&Agrave; propos</h2>
+            </div>
+            <div id="aproposcontent">>
+                <div id="apropostext">
+                    <p class="alinea"> J'ai débuté mes études en Histoire de l'Art afin d'appronfondir mes connaissances dans ce milieu. 
+                        Par la suite, j'ai réalisé que cet enseignement ne me convenait pas, je suis donc partie étudier les cosmétiques.
+                    </p>
+                    <p class="alinea"> Mon fort intérêt pour ce qui relève du bien-être et de la nature m'a conduit à travailler pour une 
+                        savonnerie artisanale. Ici, j'ai découvert les Métiers de la communication Digitale, que je souhaite aujourd'hui 
+                        appronfondir.
+                    </p>
+            </div>
+        </div>
+    </section>
+    <section id="experiences">
+        <div class="title">
+            <span></span>
+            <h2 class="background">Expériences Professionnelles</h2>
+            <div class="timeline">
+                <ul>
+                    <li id="csc">
+                        <div class="content" id="content1">
+                            <h2>Assitante Marketing</h2>
+                            <h3>Louise émoi</h3>
+                            <p>Alternance 2020 - 2022</p>
+                            <p>
+                                <div class="details">Service client</div>
+                                <div class="details">Rédaction WEB</div>
+                                <div class="details">Community Management</div>
+                            </p>
+                        </div>
+                        <div class="time time7" id="time7">
+                            <h3>2020 - Aujourd'hui</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h2>Stage : Animatrice/Attachée Commerciale</h2>
+                            <h3>DR HAUSCHKA</h3>
+                            <p>2 mois (Novembre 2019 - Janvier 2020)</p>
+                            <p><div class="details">Gestion d'un porte feuille client</div>
+                            <div class="details">Animations dans différents points de vente</div>
+                            </p>
+                        </div>
+                        <div class="time time8" id="time8">
+                            <h3>2019 - 2020</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h2>Employée saisonnier</h2>
+                            <h3>McDonald's</h3>
+                            <p>Été 2019</p>
+                        </div>
+                        <div class="time time9" id="time9">
+                            <h3>2019</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h2>Stage : Conseillère</h2>
+                            <h3>Parapharmacie Carré Santé Beauté</h3>
+                            <p>5 semaines (Mai - Juin)</p>
+                        </div>
+                        <div class="time time10" id="time10">
+                            <h3>2019</h3>
+                        </div>
+                    </li>
+                    <div style="clear:both;"></div>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="parcours">
+        <div class="title">
+            <span></span>
+            <h2 class="background">Parcours</h2>
+            <div class="timeline">
+                <ul>
+                    <li id="csc">
+                        <div class="content" id="content1">
+                            <h2>Bachelor Cheffe de Projet Digital </h2>
+                            <h3>WIS TOULOUSE (31200)</h3>
+                        </div>
+                        <div class="time time1" id="time1">
+                            <h3>2021 - 2022</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h2>Bachelor Expert Marketing </h2>
+                            <h3>Ecole Peyrefitte - LYON (69002)</h3>
+                        </div>
+                        <div class="time time2" id="time2">
+                            <h3>2020 - 2021</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h2>BTS Métiers de l'Esthétique Cosmétiques Parfumeries </h2>
+                            <h3>Ecole Peyrefitte - LYON (69002)</h3>
+                        </div>
+                        <div class="time time3" id="time3">
+                            <h3>2018 - 2020</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h2>Licence 1 - Portail Arts</h2>
+                            <h3>Université Lumière Lyon 2 - LYON (69007)</h3>
+                        </div>
+                        <div class="time time4" id="time4">
+                            <h3>2017 - 2018</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h2>Baccalauréat Littéraire</h2>
+                            <h3>Lycée Mathias - Chalon-sur-Saône (71321)</h3>
+                        </div>
+                        <div class="time time5" id="time5">
+                            <h3>2016 - 2017</h3>
+                        </div>
+                    </li>
+                    <div style="clear:both;"></div>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="title">
+            <span></span>
+            <h2 class="background">Contact</h2>
+        </div>
+        <div class="message">
+            <p class="contactcontent">Si mon profil a suscité votre curiosité, n'hésitez pas à me contacter.</p>
+            <div id="interaction">
+                <img class="interaction" src="images/click.png" alt="">
+                <p> / </p>
+                <img class="interaction" src="images/hand.png" alt="">
+            </div>
+        </div>
+        <div class="contact-cards">
+            <a href="tel:0637526401" class="cards">
+                <i class="fas fa-mobile-alt fa-5x"></i>
+                <div class="info-contact" id="num">+33 6-37-52-64-01</div>
+            </a>
+            <a href="mailto:colinemma10@gmail.com" class="cards">
+                <i class="far fa-envelope-open fa-5x"></i>
+                <div class="info-contact" id="mail">colinemma10@gmail.com</div>
+            </a>
+            <a href="https://fr.linkedin.com/in/emma-colin-9bb3241a8" class="cards">
+                <i class="fab fa-linkedin fa-5x"></i>
+                <div class="info-contact" id="linkedin">Emma COLIN</div>
+            </a>
+        </div>
+    </section>
+    <script src="animation_text.js"></script>
+    <script src="burgerNav.js"></script>
+    <script src="switchHTML.js"></script>
 </body>
+
+</html>

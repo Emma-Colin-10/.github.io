@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+.alinea { 
+    text-indent: 50px; 
+}
+
+/*Navigation bar*/
+#navbar{
+    height:4vw;
+    min-height: 5vh;
+    background-color: rgba(5, 49, 61, 0.95);
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+    z-index:3;
+}
+nav ul{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height:100%;
+}
+nav>ul>li{
+    list-style: none;
+}
+nav>ul>li>a{
+    margin:20px;
+    color:rgb(193, 168, 105);
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:medium;
+}
+#homelog{
+    margin:5px;
+}
+
+/*Menu-burger*/
+.barreNavigation{
+    z-index: 3;
+    display: none;
+    flex-direction: column;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 2px 6px rgb(193, 168, 105);
+    margin-top: -4px;
+    background-color: rgba(5, 49, 61, 0.95);
+    
+}
+.icon-burger{
+    display: none;
+}
+#links{
+    background-color:  rgba(5, 49, 61, 0.95);
+    opacity: 0.9;
+}
+#links>.column>a{
+    padding:1vh;
+    color:rgb(193, 168, 105);
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:medium;
+}
+
+/*Sections*/
+section{
+    min-height:10vh;
+    margin:0;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body:nth-child(2),body:nth-child(4),body:nth-child(6){
+    background-color: rgb(238, 238, 238);
+}
+#parcours,#experiences{
+    background-color: rgb(5, 42, 53);
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+h2.background {
+    z-index: 2;
+    text-align: center;
+    text-transform: uppercase;
+    color:rgb(193, 168, 105);
+    font-size: xx-large;
+    font-weight: lighter;
+    font-family: 'Old Standard TT', serif;
+    background: rgb(238, 238, 238);
+}
+.title>span {
+    background: rgb(238, 238, 238);
+    display: block;
+    width:50%;
+    border-top:2px solid rgb(193, 168, 105);
+    z-index:1;
+    transform: translate(0,45px);
+}
+#parcours>.title>h2.background,#projets>.title>h2.background,#experiences>.title>h2.background{
+    background-color: rgb(5, 42, 53);
+}
+
+/*Home section*/
+.parallax{
+    background-image: url(https://png.pngtree.com/background/20210715/original/pngtree-black-gold-mandala-symmetrical-pattern-background-picture-image_1322527.jpg) ;
+    height: 100vh;
+    margin:0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#home{
+    background-color:rgb(53, 41, 41,.8);
+    display:flex;
+    flex-direction: row;
+    color:whitesmoke;
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+}
+#name{
+    position: absolute;
+    top:10vh;
+}
+#home p{
+    position: relative;
+    bottom:0;
+}
+#presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-end;
+    height:80%;
+    padding:5vw;
+    line-height:2;
+}
+#presentation{
+    text-shadow: 
+    1px 1px 2px black,
+    0 0 1em rgb(75, 75, 75),
+    0 0 0.2em rgb(75, 75, 75);
+}
+
+/*A propos section*/
+#aproposcontent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify ;
+}
+#apropostext{
+    padding: 5vw;
+    font-size:1.2vw;
+}
+
+/* Expériences Professionnelles */
+.time7{
+    right:-17vw;
+}
+.time8{
+    left:-12vw;
+}
+.time9{
+    right:-7.5vw;
+}
+.time10{
+    left:-7vw;
+}
+
+/*Parcours*/
+.timeline{
+    position: relative;
+    margin:50px auto;
+    padding:40px 0;
+    width:75%;
+}
+.timeline:before{
+    content:'';
+    position: absolute;
+    left:50%;
+    width:2px;
+    height:95%;
+    background:white;
+}
+.timeline ul {
+    padding:0;
+    margin:0;
+}
+.timeline ul li{
+    position:relative;
+    padding:20px 40px;
+    width:50%;
+    list-style:none;
+    box-sizing: border-box;
+}
+.timeline ul li h3{
+    font-size:1.5vw;
+}
+.timeline ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+}
+.timeline ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+}
+.content{
+    padding-bottom:20px;
+}
+.content p,.details {
+    font-size:1.2vw;
+}
+.details{
+    font-size:1vw;
+}
+.timeline ul li:nth-child(odd):before{
+    content:'';
+    position: absolute;
+    width: 20px;
+    height:20px;
+    top:24px;
+    right:-11px;
+    background:rgb(193, 168, 105);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(193, 168, 105,0.2);
+}
+.timeline ul li:nth-child(even):before{
+    content:'';
+    position: absolute;
+    width: 20px;
+    height:20px;
+    top:24px;
+    left:-9px;
+    background:rgb(193, 168, 105);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(193, 168, 105,0.2);
+}
+.timeline ul li h2{
+    margin:0;
+    padding:0;
+    font-size: 2vw;
+    color:rgb(193, 168, 105);
+}
+.time h3{
+    margin:0;
+    padding:0;
+    font-size: 1.5vw;
+}
+.time{
+    position:absolute;
+    top:16px;
+    margin:0;
+    padding:8px 16px;
+    background:rgb(193, 168, 105);
+    color:#fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(193, 168, 105,0.2);
+}
+.time1{
+    right: -12vw;
+}
+.time2{
+    left:-12vw;
+}
+.time3{
+    right:-12vw;
+}
+.time4{
+    left:-12vw;
+}
+.time5{
+    right:-12vw;
+}
+.fab{
+    font-size: 5vw;
+    color:whitesmoke;
+}
+.timeline{
+    color:white;
+}
+
+/*contact*/
+.contactcontent{
+    text-align: center;
+    height:15vh;
+    margin-top: 5vh;;
+    font-size: xx-large;
+}
+#interaction{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    font-size: 80px;
+    margin: 0 15px 40px 15px;
+    height:10vh;
+}
+.interaction{
+    width:5vw;
+    padding:0 30px 0 30px; 
+}
+.contact-cards{
+    display: flex;
+    justify-content: space-around;
+    height:40vh;
+}
+.cards{
+    margin:5%;
+    width:25%;
+    border: 1px solid rgb(193, 168, 105);
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cards>i{
+    color:rgb(193, 168, 105);
+}
+.cards:hover{
+    background-color:  rgb(193, 168, 105);
+    color:white;
+}
+.cards:hover i{
+    color:white;
+}
+.contact-cards>a{
+    text-decoration: none;
+    color:black;
+}
+.info-contact{
+    margin:30px 30px 0 30px;
+    padding-bottom:0;
+}
+
+/*bar de navigation > menu burger*/
+@media (max-width:768px){
+    #navbar{
+        display: none;
+    }
+    .barreNavigation{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0;
+    }
+    #links{
+        display: none;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+    }
+    .icon-burger{
+        display: block;
+        padding:1vw;
+        height: 20px;
+    }
+    .fa-bars{
+        width: 100px;
+        color:rgb(193, 168, 105);
+    }
+    .parallax{
+        height:50vh;
+    }
+    #text{
+        font-size: x-large;
+    }
+    #name{
+        font-size: x-large;
+    }
+}
+
+/* Parcours et Expériences */
+@media (max-width:400px){
+    .timeline ul li:nth-child(odd):before{
+        left:-0.5vw;
+    }
+    .timeline ul li:nth-child(even):before{
+        left:-0.5vw;
+    }
+}
+@media (max-width:600px){
+    .timeline ul li:nth-child(odd):before{
+        left:0;
+    }
+    .timeline ul li:nth-child(even):before{
+        left:0;
+    }
+}
